@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * API
+ * should only concern itself with
+ * getting a request and
+ * setting a response from the server
+ */
 @RestController
 @RequestMapping("/api/v1/movies")
 public class MovieController {
