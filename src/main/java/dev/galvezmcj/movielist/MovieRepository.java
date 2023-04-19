@@ -13,5 +13,11 @@ import java.util.Optional;
  */
 @Repository
 public interface MovieRepository extends MongoRepository<Movie, ObjectId> {
+    /**
+     * New method to be implemented
+     * findMovieByImdbId
+     * @param imdbId should be unique
+     * @return the Movie object with the matching imdbId
+     */
     Optional<Movie> findMovieByImdbId(String imdbId);
 }
