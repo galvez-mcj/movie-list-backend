@@ -18,6 +18,7 @@ import java.util.Optional;
  * getting a request and
  * setting a response from the server
  */
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/v1/movies")
 public class MovieController {
